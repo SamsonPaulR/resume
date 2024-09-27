@@ -1,50 +1,76 @@
-<html>
-<title>Resume</title>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	
-	<style type="text/css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Homepage</title>
+  <style type="text/css">
+    /* General Styles */
 
-		*{
-			scroll-behavior: smooth;
-		} 
-		#close{
-			background-color:white;
-		}
-		#close:hover{
-			background-color: red;
-		}
-body{
-background-image: linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% );
-color: #6643b5;
-margin: 10;
-padding-top:100px;
-padding-bottom:100px;
- }
- .header{
- background-image: linear-gradient( 85.2deg,  rgba(33,3,40,1) 7.5%, rgba(65,5,72,1) 88.7% );
- padding: auto;
- background-size: cover ;
- color: #6643b5;
- box-shadow: 0 0 10px black;
+ body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color:white;
+  
+  /*ine-height: 1.6;*/
 }
-.header img{
-float: left;
-margin-left: 5px;
-max-width: 100px;
-height: auto;
- }
-.header pre{
-margin-left:10px;
+
+header {
+  background: linear-gradient(75deg,blueviolet,deeppink);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
- .samfoot{
- background-image: url("star gif.gif");
- color:#6d42c7;
- background-size: cover ;
- box-shadow: 0 0 10px black;
+
+h1 {
+  margin: 0;
+}
+ .header img{
+  float: right;
+  margin-right: 29px;
+  max-width: 100px;
+  height: auto;
  }
+
+.intro {
+  padding: 20px;
+  text-align: center;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.details {
+  background-image: url("star gif.gif");
+  padding: 20px;
+  text-align: left;
+  margin: 20px auto;
+  max-width: 600px;
+  color:#fff;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.details h2 {
+  margin-top: 0;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
  .sidebar{
- background-image: url("star gif.gif");
- color: #6643b5;
+ background: linear-gradient(75deg,blueviolet,deeppink);
  float: right;
  width: 250px;
  text-align: left;
@@ -52,18 +78,19 @@ margin-left:10px;
  padding-top:100px;
  padding-right: 50px;
  padding-left: 25px;
- padding-bottom: 25px;  
+ padding-bottom: 50px; 
+ border-radius: 10px;
+
  }
-.typewriter{
-  color::#6d42c7;
-  font-family: monospace;
+ #typewriter{
+  color: #fff;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em; /* Adjust as needed */
   animation: 
-  typing 3.5s steps(30, end),
-  blink-caret .5s step-end infinite;
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
 }
 
 /* The typing effect */
@@ -71,84 +98,104 @@ margin-left:10px;
   from { width: 0 }
   to { width: 100% }
 }
- 
-	</style>
 
-<header class="header">
-	<h2 style="text-align: right;"><button id="close" onclick="son()">X</button></h2>
-	
-	<center><h1>RESUME</h1></center><br>
-<pre>
-	<img src="IMG-20220909-WA0002.jpg"><br><br><br><br>
-<h2>
-Samson Paul R
-Male, 11/06/2002, 22 years
-Nationality: Indian
-<h2>
-</pre>
+.content{
+  padding: 50px;
+  display:inline;
+}
 
-</header>
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+.close{
+  text-align: right;
+  margin-top: 0px;
+}
+#close{
+  color:black;
+}
+#close:hover{
+background-color:red;
+color:#fff;
+}
+
+  </style>
 </head>
 <body>
-			<script type="text/javascript">
+  <header>
+    <h2 class="close"><button id="close" onclick="son()">X</button></h2>
+    <h1>Resume</h1>
+    <script type="text/javascript">
 			let mywindow
 			function son()
 			{
 			mywindow=window.close();
 		    }
-		    </script>
-		
-	<aside class="sidebar">
-		<div class="typewriter">
-		<h1>SKILLS:</h1>
-			<ul>
-				<li> Html 5</li>
-				<li> Css 3</li>
-				<li>SQL</li>
-				<li>C#</li>
-				<li>Php</li>
-                                
-                        <li>Python</li>
-                        
-			</ul>
+		 </script>
+  </header>
 
-			<h1>EXTRACURRICULAR:</h1>
-			<ul>
-				<li>Digital Marketing.</li>
-				<li>MS Office.</li>
-			</ul>
-		</div>
-	</aside>
-	<h2>OBJECTIVE: </h2>
-	<article><div>To continuously enhance my knowledge, skills getting involved in challenging work 
-environment and utilize them for personal and organizational growth to the best of my 
-ability.</div></article>
-<div><h2>EDUCATIONAL QUALIFICATIONS: </h2></div>
-	<div> BCA from St. Joseph’s College (Autonomous), Trichy - Graduated with 71% </div>
-	<div> Master of Science in Computer Science from St. Joseph’s College (Autonomous), Trichy - Graduated with 77% </div>
-<div><h2>PROJECTS:</h2></div>
-<div>
-	 Parent Portal (Asp.net with c#, SQL Server)<br>
-	 Car Booking for Rental (Asp.net with c#, SQL Server)<br>
-	 Medical claiming System (Asp.net with c#, SQL Server)
-</div>
-<div><h2>AREAS OF INTEREST:</h2></div>
-<div>
-	 Web Design and Development.<br>
-	 Full stack Development.
-</div>
+  <section class="intro">
+    <img src="IMG-20220909-WA0002.jpg" alt="Profile Picture" class="profile-pic">
+    <p>Hi, I'm Samson Paul R, a passionate web developer and designer based in Viragalur, Tiruchirappalli-621722.I got completed My Master degree in Computer Science. I love creating beautiful and functional websites. And I have adequate Knowledge in Web Development.</p>
+  </section>
 
-	
-		
-	
-	
+  <section class="details">
+    <h2>About Me</h2>
+    <ul>
+      <li><strong>Full Name:</strong> Samson Paul R</li>
+      <li><strong>Location:</strong> Viragalur, Tiruchirappalli-621722</li>
+      <li><strong>Email:</strong> <a href="mailto:samsonpaulr@yahoo.com">samsonpaulr@yahoo.com</a> </li>
+      <li><strong>Phone:</strong> (+91) 89250-43962</li>
+    </ul>
+  </section>
+<aside class="sidebar">
+    <h1>skills</h1>
+      <ul id ="typewriter">
+        <li> Html 5</li>
+        <li> Css 3</li>
+        <li>C#</li>
+        <li>SQL</li>
+        <li>Php</li>
+        <li>Python</li>
+      </ul>
+
+      <h1>EXTRACURRICULAR</h1>
+      <ul id ="typewriter">
+        <li>Macromedia Flash 8.0</li>
+        <li>MS Office</li>
+      </ul>
+</aside>
+<div class="content">
+ 
+<div><h2>EDUCATIONAL QUALIFICATIONS: </h2>
+  <ul>
+    <li><b>BCA</b> from St. Joseph’s College (Autonomous), Tiruchirappalli-02 with 71 % (2019 - 2022).</li>
+    <li><b>Master of Science in Computer Science</b> from St. Joseph’s College (Autonomous), Tiruchirappalli-02 with 77 % (2022 - 2024).</li>
+  </ul> 
+</div>
+<div><h2>CERTIFICATIONS: </h2>
+  <ul>
+    <li><b>Certified .NET Fundamentals</b> Great Learning Academy(August 2024).</li>
+    
+  </ul> 
+</div>
+<div><h2>PROJECTS:</h2>
+   <h3>Parent Portal (Asp.net with c#, SQL Server)</h3>
+    <p>The Parent Portal is a web-based application designed for schools, colleges, and institutes to provide parents with real-time access to their child’s attendance, marks, and other academic activities. </p>
+   <h3>Car Booking for Rental (Asp.net with c#, SQL Server)</h3>
+    <p>The car booking for rental project is designed to manage customer car rentals and transactions. It displays available cars on the home page, but users can only view them after returning a previously rented car. </p>
+   <h3>Medical claiming System (Asp.net with c#, SQL Server)</h3>
+    <p>The Web Medical Based Claims Processing System is designed to streamline the process of medical insurance claims. It allows employees to fill out and submit claim forms online, reducing the need for repeated visits to the claim center.</p>
+</div>
+</div>
+  <footer>
+    <p>© 2024 Samson Paul R. All rights reserved.</p>
+  </footer>
 </body>
-<footer class="samfoot">
-			<center> <b>
-				<p><a href="mailto:samson2002paul@gmail.com" style="color:#6d42c7;">Email: samson2002paul@gmail.com</a></p>
-				<p>Mobile: +91 89250 43962</p></b>
-            </center>
-            
-</footer>
-
 </html>
